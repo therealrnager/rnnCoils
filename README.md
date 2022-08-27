@@ -1,5 +1,5 @@
 ![header ](readmeVisual.png)
-_Figure: Sample prediction by rnnCoils_
+_Figure: Sample prediction by rnnCoils of protein sequence B in PDB ID: 5UBT._
 
 # rnnCoils
 This directory holds (parts of) the work of undergraduate Ranger Kuang during the Harvard Systems Bio REU Summer Internship 2023. This README file will give a broad overview of where files are and what certain were meant to accomplish. Please contact me at ranger.kuang@columbia.edu if any questions arise that I can answer. 
