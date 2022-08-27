@@ -1,5 +1,7 @@
 # rnnCoils
-This directory holds (parts of) the work of undergraduate Ranger Kuang under mentorship by Nick Carter, for the coiled-coil neural-network detector project. This README file will give a broad overview of where files are and what certain were meant to accomplish. Please contact me at ranger.kuang@columbia.edu if any questions arise that I can answer. 
+This directory holds (parts of) the work of undergraduate Ranger Kuang during the Harvard Systems Bio REU Summer Internship 2023. This README file will give a broad overview of where files are and what certain were meant to accomplish. Please contact me at ranger.kuang@columbia.edu if any questions arise that I can answer. 
+
+Note that due to file size limits, this repo does not include every single file relevant to the project and thus is not meant to be a working copy of the project. However, it still showcases the majority of the files I compiled and wrote for the project.
 
 ## Data 
 Data was originally collected and stored at: 
@@ -10,7 +12,7 @@ All data used for the project was stored in the `CC_data/` directory. Amongst th
     * The first layer of subdirectories includes `to100/`, `to400/`, and `to_max/`. These are meant to partition the files into sequences of length 1-100, 101-400, and 401 onwards.
     * The second sublayer includes `train/`, `valid/`, `test/`, and `x_graveyard/`. the first 3 are in an _approximately_ 80%:10%:10% split (reasoning in the very next sentence). `x_graveyard/` is for all files where their sequence content was more 30% or more "X". I did this parse after splitting into train, validation, test sets which is why their split is only approximately 80:10:10. 
 * `unique_pkl_data/` is where I have pickled files that store the actual data in the format of TensorFlow datatype "Ragged Tensors". 
-    * Due to the size of these files, they are not stored on github. 
+    * Due to the size of these files, they are not stored on github. Note that without these files, it is impossible to run any of the models, without re-pickling the data into the correct format.
 
 ## Data Collection and Processing
 All processing of data was done by many python files stored in  `CC_project/data_cleanup/`. I've explained some of the notable files:
