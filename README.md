@@ -2,7 +2,9 @@
 _Figure: Sample prediction by rnnCoils of protein sequence B in PDB ID: 5UBT._
 
 # rnnCoils
-This directory holds (parts of) the work of undergraduate Ranger Kuang during the Harvard Systems Bio REU Summer Internship 2023. This README file will give a broad overview of where files are and what certain were meant to accomplish. Please contact me at ranger.kuang@columbia.edu if any questions arise that I can answer. 
+This directory holds (parts of) the work of undergraduate Ranger Kuang during the Harvard Systems Bio REU Summer Internship 2023. rnnCoils is an LSTM-based predictor for coiled-coil domains within 1D protein sequences. It runs on Python and utilizes TensorFlow for machine-learning architecture.
+
+This README file will give a broad overview of where files are and what certain were meant to accomplish. Please contact me at ranger.kuang@columbia.edu if any questions arise that I can answer. 
 
 Note that due to file size limits, this repo does not include every single file relevant to the project and thus is not meant to be a working copy of the project. However, it still showcases the majority of the files I compiled and wrote for the project.
 
