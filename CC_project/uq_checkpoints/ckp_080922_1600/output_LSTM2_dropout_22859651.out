@@ -1,0 +1,225 @@
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ embedding (Embedding)       (None, None, 48)          1248      
+                                                                 
+ bidirectional (Bidirectiona  (None, None, 192)        111360    
+ l)                                                              
+                                                                 
+ bidirectional_1 (Bidirectio  (None, None, 64)         57600     
+ nal)                                                            
+                                                                 
+ dropout (Dropout)           (None, None, 64)          0         
+                                                                 
+ dense (Dense)               (None, None, 1)           65        
+                                                                 
+=================================================================
+Total params: 170,273
+Trainable params: 170,273
+Non-trainable params: 0
+_________________________________________________________________
+None
+Epoch 1/60
+
+Epoch 1: val_prc improved from -inf to 0.11113, saving model to /n/eddy_lab/users/rangerkuang/CC_project/uq_checkpoints/ckp_080922_1600/model_080922_1600.ckpt
+1750/1750 - 561s - loss: 0.0340 - tp: 17.0000 - fp: 9327.0000 - tn: 27747716.0000 - fn: 277289.0000 - accuracy: 0.9898 - precision: 0.0018 - recall: 6.1304e-05 - auc: 0.7067 - prc: 0.0303 - weighted_accuracy: 0.9898 - val_loss: 0.0283 - val_tp: 0.0000e+00 - val_fp: 68.0000 - val_tn: 3443738.0000 - val_fn: 34721.0000 - val_accuracy: 0.9900 - val_precision: 0.0000e+00 - val_recall: 0.0000e+00 - val_auc: 0.8262 - val_prc: 0.1111 - val_weighted_accuracy: 0.9900 - 561s/epoch - 320ms/step
+Epoch 2/60
+
+Epoch 2: val_prc improved from 0.11113 to 0.12103, saving model to /n/eddy_lab/users/rangerkuang/CC_project/uq_checkpoints/ckp_080922_1600/model_080922_1600.ckpt
+1750/1750 - 538s - loss: 0.0265 - tp: 6.0000 - fp: 42.0000 - tn: 27776244.0000 - fn: 277639.0000 - accuracy: 0.9901 - precision: 0.1250 - recall: 2.1610e-05 - auc: 0.8552 - prc: 0.1019 - weighted_accuracy: 0.9901 - val_loss: 0.0290 - val_tp: 0.0000e+00 - val_fp: 0.0000e+00 - val_tn: 3443806.0000 - val_fn: 34721.0000 - val_accuracy: 0.9900 - val_precision: 0.0000e+00 - val_recall: 0.0000e+00 - val_auc: 0.8815 - val_prc: 0.1210 - val_weighted_accuracy: 0.9900 - 538s/epoch - 307ms/step
+Epoch 3/60
+
+Epoch 3: val_prc improved from 0.12103 to 0.14661, saving model to /n/eddy_lab/users/rangerkuang/CC_project/uq_checkpoints/ckp_080922_1600/model_080922_1600.ckpt
+1750/1750 - 571s - loss: 0.0249 - tp: 99.0000 - fp: 327.0000 - tn: 27783184.0000 - fn: 277698.0000 - accuracy: 0.9901 - precision: 0.2324 - recall: 3.5638e-04 - auc: 0.8827 - prc: 0.1231 - weighted_accuracy: 0.9901 - val_loss: 0.0248 - val_tp: 0.0000e+00 - val_fp: 0.0000e+00 - val_tn: 3443806.0000 - val_fn: 34721.0000 - val_accuracy: 0.9900 - val_precision: 0.0000e+00 - val_recall: 0.0000e+00 - val_auc: 0.8685 - val_prc: 0.1466 - val_weighted_accuracy: 0.9900 - 571s/epoch - 326ms/step
+Epoch 4/60
+
+Epoch 4: val_prc improved from 0.14661 to 0.15705, saving model to /n/eddy_lab/users/rangerkuang/CC_project/uq_checkpoints/ckp_080922_1600/model_080922_1600.ckpt
+1750/1750 - 589s - loss: 0.0238 - tp: 1851.0000 - fp: 3523.0000 - tn: 27768400.0000 - fn: 276139.0000 - accuracy: 0.9900 - precision: 0.3444 - recall: 0.0067 - auc: 0.8977 - prc: 0.1429 - weighted_accuracy: 0.9900 - val_loss: 0.0236 - val_tp: 0.0000e+00 - val_fp: 1.0000 - val_tn: 3443805.0000 - val_fn: 34721.0000 - val_accuracy: 0.9900 - val_precision: 0.0000e+00 - val_recall: 0.0000e+00 - val_auc: 0.8974 - val_prc: 0.1571 - val_weighted_accuracy: 0.9900 - 589s/epoch - 336ms/step
+Epoch 5/60
+
+Epoch 5: val_prc improved from 0.15705 to 0.19138, saving model to /n/eddy_lab/users/rangerkuang/CC_project/uq_checkpoints/ckp_080922_1600/model_080922_1600.ckpt
+1750/1750 - 590s - loss: 0.0228 - tp: 2278.0000 - fp: 3538.0000 - tn: 27771108.0000 - fn: 275446.0000 - accuracy: 0.9901 - precision: 0.3917 - recall: 0.0082 - auc: 0.9096 - prc: 0.1609 - weighted_accuracy: 0.9901 - val_loss: 0.0223 - val_tp: 32.0000 - val_fp: 39.0000 - val_tn: 3443767.0000 - val_fn: 34689.0000 - val_accuracy: 0.9900 - val_precision: 0.4507 - val_recall: 9.2163e-04 - val_auc: 0.9219 - val_prc: 0.1914 - val_weighted_accuracy: 0.9900 - 590s/epoch - 337ms/step
+Epoch 6/60
+
+Epoch 6: val_prc improved from 0.19138 to 0.22241, saving model to /n/eddy_lab/users/rangerkuang/CC_project/uq_checkpoints/ckp_080922_1600/model_080922_1600.ckpt
+1750/1750 - 588s - loss: 0.0213 - tp: 7154.0000 - fp: 8627.0000 - tn: 27775936.0000 - fn: 270591.0000 - accuracy: 0.9901 - precision: 0.4533 - recall: 0.0258 - auc: 0.9204 - prc: 0.1959 - weighted_accuracy: 0.9901 - val_loss: 0.0210 - val_tp: 1553.0000 - val_fp: 1377.0000 - val_tn: 3442429.0000 - val_fn: 33168.0000 - val_accuracy: 0.9901 - val_precision: 0.5300 - val_recall: 0.0447 - val_auc: 0.9228 - val_prc: 0.2224 - val_weighted_accuracy: 0.9901 - 588s/epoch - 336ms/step
+Epoch 7/60
+
+Epoch 7: val_prc improved from 0.22241 to 0.24427, saving model to /n/eddy_lab/users/rangerkuang/CC_project/uq_checkpoints/ckp_080922_1600/model_080922_1600.ckpt
+1750/1750 - 591s - loss: 0.0202 - tp: 15558.0000 - fp: 15607.0000 - tn: 27726124.0000 - fn: 261950.0000 - accuracy: 0.9901 - precision: 0.4992 - recall: 0.0561 - auc: 0.9270 - prc: 0.2300 - weighted_accuracy: 0.9901 - val_loss: 0.0205 - val_tp: 2009.0000 - val_fp: 1791.0000 - val_tn: 3442015.0000 - val_fn: 32712.0000 - val_accuracy: 0.9901 - val_precision: 0.5287 - val_recall: 0.0579 - val_auc: 0.9326 - val_prc: 0.2443 - val_weighted_accuracy: 0.9901 - 591s/epoch - 338ms/step
+Epoch 8/60
+
+Epoch 8: val_prc improved from 0.24427 to 0.25807, saving model to /n/eddy_lab/users/rangerkuang/CC_project/uq_checkpoints/ckp_080922_1600/model_080922_1600.ckpt
+1750/1750 - 596s - loss: 0.0193 - tp: 19475.0000 - fp: 17254.0000 - tn: 27786498.0000 - fn: 258280.0000 - accuracy: 0.9902 - precision: 0.5302 - recall: 0.0701 - auc: 0.9315 - prc: 0.2556 - weighted_accuracy: 0.9902 - val_loss: 0.0200 - val_tp: 2312.0000 - val_fp: 2187.0000 - val_tn: 3441619.0000 - val_fn: 32409.0000 - val_accuracy: 0.9901 - val_precision: 0.5139 - val_recall: 0.0666 - val_auc: 0.9318 - val_prc: 0.2581 - val_weighted_accuracy: 0.9901 - 596s/epoch - 341ms/step
+Epoch 9/60
+
+Epoch 9: val_prc improved from 0.25807 to 0.27105, saving model to /n/eddy_lab/users/rangerkuang/CC_project/uq_checkpoints/ckp_080922_1600/model_080922_1600.ckpt
+1750/1750 - 580s - loss: 0.0186 - tp: 24648.0000 - fp: 19079.0000 - tn: 27736528.0000 - fn: 252670.0000 - accuracy: 0.9903 - precision: 0.5637 - recall: 0.0889 - auc: 0.9359 - prc: 0.2801 - weighted_accuracy: 0.9903 - val_loss: 0.0197 - val_tp: 2467.0000 - val_fp: 2292.0000 - val_tn: 3441514.0000 - val_fn: 32254.0000 - val_accuracy: 0.9901 - val_precision: 0.5184 - val_recall: 0.0711 - val_auc: 0.9370 - val_prc: 0.2711 - val_weighted_accuracy: 0.9901 - 580s/epoch - 331ms/step
+Epoch 10/60
+
+Epoch 10: val_prc improved from 0.27105 to 0.28254, saving model to /n/eddy_lab/users/rangerkuang/CC_project/uq_checkpoints/ckp_080922_1600/model_080922_1600.ckpt
+1750/1750 - 575s - loss: 0.0180 - tp: 29675.0000 - fp: 19334.0000 - tn: 27756050.0000 - fn: 247809.0000 - accuracy: 0.9905 - precision: 0.6055 - recall: 0.1069 - auc: 0.9395 - prc: 0.3065 - weighted_accuracy: 0.9905 - val_loss: 0.0196 - val_tp: 2678.0000 - val_fp: 2104.0000 - val_tn: 3441702.0000 - val_fn: 32043.0000 - val_accuracy: 0.9902 - val_precision: 0.5600 - val_recall: 0.0771 - val_auc: 0.9316 - val_prc: 0.2825 - val_weighted_accuracy: 0.9902 - 575s/epoch - 329ms/step
+Epoch 11/60
+
+Epoch 11: val_prc improved from 0.28254 to 0.28602, saving model to /n/eddy_lab/users/rangerkuang/CC_project/uq_checkpoints/ckp_080922_1600/model_080922_1600.ckpt
+1750/1750 - 585s - loss: 0.0174 - tp: 35083.0000 - fp: 22432.0000 - tn: 27784700.0000 - fn: 242840.0000 - accuracy: 0.9906 - precision: 0.6100 - recall: 0.1262 - auc: 0.9424 - prc: 0.3253 - weighted_accuracy: 0.9906 - val_loss: 0.0196 - val_tp: 3314.0000 - val_fp: 2799.0000 - val_tn: 3441007.0000 - val_fn: 31407.0000 - val_accuracy: 0.9902 - val_precision: 0.5421 - val_recall: 0.0954 - val_auc: 0.9273 - val_prc: 0.2860 - val_weighted_accuracy: 0.9902 - 585s/epoch - 334ms/step
+Epoch 12/60
+
+Epoch 12: val_prc improved from 0.28602 to 0.29156, saving model to /n/eddy_lab/users/rangerkuang/CC_project/uq_checkpoints/ckp_080922_1600/model_080922_1600.ckpt
+1750/1750 - 584s - loss: 0.0169 - tp: 41894.0000 - fp: 25207.0000 - tn: 27746704.0000 - fn: 235773.0000 - accuracy: 0.9907 - precision: 0.6243 - recall: 0.1509 - auc: 0.9448 - prc: 0.3493 - weighted_accuracy: 0.9907 - val_loss: 0.0197 - val_tp: 4129.0000 - val_fp: 3394.0000 - val_tn: 3440412.0000 - val_fn: 30592.0000 - val_accuracy: 0.9902 - val_precision: 0.5489 - val_recall: 0.1189 - val_auc: 0.9268 - val_prc: 0.2916 - val_weighted_accuracy: 0.9902 - 584s/epoch - 334ms/step
+Epoch 13/60
+
+Epoch 13: val_prc did not improve from 0.29156
+1750/1750 - 584s - loss: 0.0164 - tp: 46942.0000 - fp: 27194.0000 - tn: 27710372.0000 - fn: 231034.0000 - accuracy: 0.9908 - precision: 0.6332 - recall: 0.1689 - auc: 0.9474 - prc: 0.3695 - weighted_accuracy: 0.9908 - val_loss: 0.0202 - val_tp: 5374.0000 - val_fp: 5022.0000 - val_tn: 3438784.0000 - val_fn: 29347.0000 - val_accuracy: 0.9901 - val_precision: 0.5169 - val_recall: 0.1548 - val_auc: 0.9183 - val_prc: 0.2884 - val_weighted_accuracy: 0.9901 - 584s/epoch - 334ms/step
+Epoch 14/60
+
+Epoch 14: val_prc improved from 0.29156 to 0.30137, saving model to /n/eddy_lab/users/rangerkuang/CC_project/uq_checkpoints/ckp_080922_1600/model_080922_1600.ckpt
+1750/1750 - 586s - loss: 0.0159 - tp: 52293.0000 - fp: 29906.0000 - tn: 27754690.0000 - fn: 225609.0000 - accuracy: 0.9909 - precision: 0.6362 - recall: 0.1882 - auc: 0.9494 - prc: 0.3844 - weighted_accuracy: 0.9909 - val_loss: 0.0201 - val_tp: 6519.0000 - val_fp: 6097.0000 - val_tn: 3437709.0000 - val_fn: 28202.0000 - val_accuracy: 0.9901 - val_precision: 0.5167 - val_recall: 0.1878 - val_auc: 0.9315 - val_prc: 0.3014 - val_weighted_accuracy: 0.9901 - 586s/epoch - 335ms/step
+Epoch 15/60
+
+Epoch 15: val_prc improved from 0.30137 to 0.31273, saving model to /n/eddy_lab/users/rangerkuang/CC_project/uq_checkpoints/ckp_080922_1600/model_080922_1600.ckpt
+1750/1750 - 586s - loss: 0.0155 - tp: 56877.0000 - fp: 31441.0000 - tn: 27740664.0000 - fn: 220682.0000 - accuracy: 0.9910 - precision: 0.6440 - recall: 0.2049 - auc: 0.9514 - prc: 0.4028 - weighted_accuracy: 0.9910 - val_loss: 0.0202 - val_tp: 5817.0000 - val_fp: 4572.0000 - val_tn: 3439234.0000 - val_fn: 28904.0000 - val_accuracy: 0.9904 - val_precision: 0.5599 - val_recall: 0.1675 - val_auc: 0.9227 - val_prc: 0.3127 - val_weighted_accuracy: 0.9904 - 586s/epoch - 335ms/step
+Epoch 16/60
+
+Epoch 16: val_prc improved from 0.31273 to 0.31588, saving model to /n/eddy_lab/users/rangerkuang/CC_project/uq_checkpoints/ckp_080922_1600/model_080922_1600.ckpt
+1750/1750 - 587s - loss: 0.0152 - tp: 62667.0000 - fp: 34888.0000 - tn: 27752420.0000 - fn: 215374.0000 - accuracy: 0.9911 - precision: 0.6424 - recall: 0.2254 - auc: 0.9533 - prc: 0.4175 - weighted_accuracy: 0.9911 - val_loss: 0.0206 - val_tp: 5093.0000 - val_fp: 3627.0000 - val_tn: 3440179.0000 - val_fn: 29628.0000 - val_accuracy: 0.9904 - val_precision: 0.5841 - val_recall: 0.1467 - val_auc: 0.9174 - val_prc: 0.3159 - val_weighted_accuracy: 0.9904 - 587s/epoch - 336ms/step
+Epoch 17/60
+
+Epoch 17: val_prc improved from 0.31588 to 0.31881, saving model to /n/eddy_lab/users/rangerkuang/CC_project/uq_checkpoints/ckp_080922_1600/model_080922_1600.ckpt
+1750/1750 - 586s - loss: 0.0147 - tp: 67199.0000 - fp: 35419.0000 - tn: 27737720.0000 - fn: 210647.0000 - accuracy: 0.9912 - precision: 0.6548 - recall: 0.2419 - auc: 0.9545 - prc: 0.4359 - weighted_accuracy: 0.9912 - val_loss: 0.0200 - val_tp: 6210.0000 - val_fp: 4928.0000 - val_tn: 3438878.0000 - val_fn: 28511.0000 - val_accuracy: 0.9904 - val_precision: 0.5576 - val_recall: 0.1789 - val_auc: 0.9242 - val_prc: 0.3188 - val_weighted_accuracy: 0.9904 - 586s/epoch - 335ms/step
+Epoch 18/60
+
+Epoch 18: val_prc improved from 0.31881 to 0.32318, saving model to /n/eddy_lab/users/rangerkuang/CC_project/uq_checkpoints/ckp_080922_1600/model_080922_1600.ckpt
+1750/1750 - 584s - loss: 0.0145 - tp: 70368.0000 - fp: 36878.0000 - tn: 27770478.0000 - fn: 207799.0000 - accuracy: 0.9913 - precision: 0.6561 - recall: 0.2530 - auc: 0.9553 - prc: 0.4433 - weighted_accuracy: 0.9913 - val_loss: 0.0201 - val_tp: 6497.0000 - val_fp: 5064.0000 - val_tn: 3438742.0000 - val_fn: 28224.0000 - val_accuracy: 0.9904 - val_precision: 0.5620 - val_recall: 0.1871 - val_auc: 0.9285 - val_prc: 0.3232 - val_weighted_accuracy: 0.9904 - 584s/epoch - 333ms/step
+Epoch 19/60
+
+Epoch 19: val_prc improved from 0.32318 to 0.32872, saving model to /n/eddy_lab/users/rangerkuang/CC_project/uq_checkpoints/ckp_080922_1600/model_080922_1600.ckpt
+1750/1750 - 574s - loss: 0.0142 - tp: 74779.0000 - fp: 39433.0000 - tn: 27735860.0000 - fn: 203223.0000 - accuracy: 0.9914 - precision: 0.6547 - recall: 0.2690 - auc: 0.9562 - prc: 0.4562 - weighted_accuracy: 0.9914 - val_loss: 0.0200 - val_tp: 6998.0000 - val_fp: 5495.0000 - val_tn: 3438311.0000 - val_fn: 27723.0000 - val_accuracy: 0.9905 - val_precision: 0.5602 - val_recall: 0.2015 - val_auc: 0.9303 - val_prc: 0.3287 - val_weighted_accuracy: 0.9905 - 574s/epoch - 328ms/step
+Epoch 20/60
+
+Epoch 20: val_prc did not improve from 0.32872
+1750/1750 - 553s - loss: 0.0141 - tp: 75539.0000 - fp: 38684.0000 - tn: 27698438.0000 - fn: 201864.0000 - accuracy: 0.9914 - precision: 0.6613 - recall: 0.2723 - auc: 0.9569 - prc: 0.4609 - weighted_accuracy: 0.9914 - val_loss: 0.0204 - val_tp: 5053.0000 - val_fp: 4054.0000 - val_tn: 3439752.0000 - val_fn: 29668.0000 - val_accuracy: 0.9903 - val_precision: 0.5548 - val_recall: 0.1455 - val_auc: 0.9221 - val_prc: 0.3041 - val_weighted_accuracy: 0.9903 - 553s/epoch - 316ms/step
+Epoch 21/60
+
+Epoch 21: val_prc did not improve from 0.32872
+1750/1750 - 560s - loss: 0.0140 - tp: 77758.0000 - fp: 40243.0000 - tn: 27745648.0000 - fn: 200041.0000 - accuracy: 0.9914 - precision: 0.6590 - recall: 0.2799 - auc: 0.9577 - prc: 0.4666 - weighted_accuracy: 0.9914 - val_loss: 0.0205 - val_tp: 6066.0000 - val_fp: 4492.0000 - val_tn: 3439314.0000 - val_fn: 28655.0000 - val_accuracy: 0.9905 - val_precision: 0.5745 - val_recall: 0.1747 - val_auc: 0.9174 - val_prc: 0.3277 - val_weighted_accuracy: 0.9905 - 560s/epoch - 320ms/step
+Epoch 22/60
+
+Epoch 22: val_prc did not improve from 0.32872
+1750/1750 - 555s - loss: 0.0137 - tp: 82275.0000 - fp: 40551.0000 - tn: 27734120.0000 - fn: 195830.0000 - accuracy: 0.9916 - precision: 0.6699 - recall: 0.2958 - auc: 0.9590 - prc: 0.4827 - weighted_accuracy: 0.9916 - val_loss: 0.0203 - val_tp: 7174.0000 - val_fp: 5739.0000 - val_tn: 3438067.0000 - val_fn: 27547.0000 - val_accuracy: 0.9904 - val_precision: 0.5556 - val_recall: 0.2066 - val_auc: 0.9253 - val_prc: 0.3256 - val_weighted_accuracy: 0.9904 - 555s/epoch - 317ms/step
+Epoch 23/60
+
+Epoch 23: val_prc did not improve from 0.32872
+1750/1750 - 544s - loss: 0.0134 - tp: 85380.0000 - fp: 41953.0000 - tn: 27743352.0000 - fn: 192705.0000 - accuracy: 0.9916 - precision: 0.6705 - recall: 0.3070 - auc: 0.9599 - prc: 0.4920 - weighted_accuracy: 0.9916 - val_loss: 0.0211 - val_tp: 6994.0000 - val_fp: 5466.0000 - val_tn: 3438340.0000 - val_fn: 27727.0000 - val_accuracy: 0.9905 - val_precision: 0.5613 - val_recall: 0.2014 - val_auc: 0.9105 - val_prc: 0.3245 - val_weighted_accuracy: 0.9905 - 544s/epoch - 311ms/step
+Epoch 24/60
+
+Epoch 24: val_prc improved from 0.32872 to 0.33753, saving model to /n/eddy_lab/users/rangerkuang/CC_project/uq_checkpoints/ckp_080922_1600/model_080922_1600.ckpt
+1750/1750 - 542s - loss: 0.0132 - tp: 87963.0000 - fp: 43193.0000 - tn: 27732656.0000 - fn: 189889.0000 - accuracy: 0.9917 - precision: 0.6707 - recall: 0.3166 - auc: 0.9608 - prc: 0.4996 - weighted_accuracy: 0.9917 - val_loss: 0.0209 - val_tp: 8769.0000 - val_fp: 7757.0000 - val_tn: 3436049.0000 - val_fn: 25952.0000 - val_accuracy: 0.9903 - val_precision: 0.5306 - val_recall: 0.2526 - val_auc: 0.9194 - val_prc: 0.3375 - val_weighted_accuracy: 0.9903 - 542s/epoch - 310ms/step
+Epoch 25/60
+
+Epoch 25: val_prc did not improve from 0.33753
+1750/1750 - 540s - loss: 0.0130 - tp: 89624.0000 - fp: 42927.0000 - tn: 27743452.0000 - fn: 188163.0000 - accuracy: 0.9918 - precision: 0.6761 - recall: 0.3226 - auc: 0.9612 - prc: 0.5082 - weighted_accuracy: 0.9918 - val_loss: 0.0210 - val_tp: 9444.0000 - val_fp: 9534.0000 - val_tn: 3434272.0000 - val_fn: 25277.0000 - val_accuracy: 0.9900 - val_precision: 0.4976 - val_recall: 0.2720 - val_auc: 0.9222 - val_prc: 0.3328 - val_weighted_accuracy: 0.9900 - 540s/epoch - 308ms/step
+Epoch 26/60
+
+Epoch 26: val_prc improved from 0.33753 to 0.34168, saving model to /n/eddy_lab/users/rangerkuang/CC_project/uq_checkpoints/ckp_080922_1600/model_080922_1600.ckpt
+1750/1750 - 576s - loss: 0.0131 - tp: 89673.0000 - fp: 42921.0000 - tn: 27719532.0000 - fn: 187671.0000 - accuracy: 0.9918 - precision: 0.6763 - recall: 0.3233 - auc: 0.9615 - prc: 0.5065 - weighted_accuracy: 0.9918 - val_loss: 0.0209 - val_tp: 8635.0000 - val_fp: 7066.0000 - val_tn: 3436740.0000 - val_fn: 26086.0000 - val_accuracy: 0.9905 - val_precision: 0.5500 - val_recall: 0.2487 - val_auc: 0.9150 - val_prc: 0.3417 - val_weighted_accuracy: 0.9905 - 576s/epoch - 329ms/step
+Epoch 27/60
+
+Epoch 27: val_prc did not improve from 0.34168
+1750/1750 - 540s - loss: 0.0126 - tp: 95466.0000 - fp: 44202.0000 - tn: 27711790.0000 - fn: 182178.0000 - accuracy: 0.9919 - precision: 0.6835 - recall: 0.3438 - auc: 0.9632 - prc: 0.5263 - weighted_accuracy: 0.9919 - val_loss: 0.0217 - val_tp: 9428.0000 - val_fp: 8268.0000 - val_tn: 3435538.0000 - val_fn: 25293.0000 - val_accuracy: 0.9904 - val_precision: 0.5328 - val_recall: 0.2715 - val_auc: 0.9097 - val_prc: 0.3383 - val_weighted_accuracy: 0.9904 - 540s/epoch - 308ms/step
+Epoch 28/60
+
+Epoch 28: val_prc did not improve from 0.34168
+1750/1750 - 610s - loss: 0.0124 - tp: 97839.0000 - fp: 44610.0000 - tn: 27760258.0000 - fn: 180041.0000 - accuracy: 0.9920 - precision: 0.6868 - recall: 0.3521 - auc: 0.9625 - prc: 0.5332 - weighted_accuracy: 0.9920 - val_loss: 0.0210 - val_tp: 10241.0000 - val_fp: 10933.0000 - val_tn: 3432873.0000 - val_fn: 24480.0000 - val_accuracy: 0.9898 - val_precision: 0.4837 - val_recall: 0.2950 - val_auc: 0.9218 - val_prc: 0.3388 - val_weighted_accuracy: 0.9898 - 610s/epoch - 348ms/step
+Epoch 29/60
+
+Epoch 29: val_prc did not improve from 0.34168
+1750/1750 - 617s - loss: 0.0124 - tp: 98049.0000 - fp: 44472.0000 - tn: 27729648.0000 - fn: 179840.0000 - accuracy: 0.9920 - precision: 0.6880 - recall: 0.3528 - auc: 0.9638 - prc: 0.5352 - weighted_accuracy: 0.9920 - val_loss: 0.0216 - val_tp: 8555.0000 - val_fp: 7282.0000 - val_tn: 3436524.0000 - val_fn: 26166.0000 - val_accuracy: 0.9904 - val_precision: 0.5402 - val_recall: 0.2464 - val_auc: 0.9080 - val_prc: 0.3380 - val_weighted_accuracy: 0.9904 - 617s/epoch - 353ms/step
+Epoch 30/60
+
+Epoch 30: val_prc did not improve from 0.34168
+1750/1750 - 620s - loss: 0.0122 - tp: 100595.0000 - fp: 44801.0000 - tn: 27738980.0000 - fn: 176939.0000 - accuracy: 0.9921 - precision: 0.6919 - recall: 0.3625 - auc: 0.9645 - prc: 0.5438 - weighted_accuracy: 0.9921 - val_loss: 0.0226 - val_tp: 8820.0000 - val_fp: 7511.0000 - val_tn: 3436295.0000 - val_fn: 25901.0000 - val_accuracy: 0.9904 - val_precision: 0.5401 - val_recall: 0.2540 - val_auc: 0.9048 - val_prc: 0.3375 - val_weighted_accuracy: 0.9904 - 620s/epoch - 354ms/step
+Epoch 31/60
+
+Epoch 31: val_prc did not improve from 0.34168
+1750/1750 - 620s - loss: 0.0121 - tp: 102126.0000 - fp: 46299.0000 - tn: 27728016.0000 - fn: 175769.0000 - accuracy: 0.9921 - precision: 0.6881 - recall: 0.3675 - auc: 0.9646 - prc: 0.5464 - weighted_accuracy: 0.9921 - val_loss: 0.0224 - val_tp: 8033.0000 - val_fp: 7058.0000 - val_tn: 3436748.0000 - val_fn: 26688.0000 - val_accuracy: 0.9903 - val_precision: 0.5323 - val_recall: 0.2314 - val_auc: 0.9036 - val_prc: 0.3247 - val_weighted_accuracy: 0.9903 - 620s/epoch - 354ms/step
+Epoch 32/60
+
+Epoch 32: val_prc did not improve from 0.34168
+1750/1750 - 647s - loss: 0.0121 - tp: 102827.0000 - fp: 46216.0000 - tn: 27695044.0000 - fn: 174692.0000 - accuracy: 0.9921 - precision: 0.6899 - recall: 0.3705 - auc: 0.9649 - prc: 0.5495 - weighted_accuracy: 0.9921 - val_loss: 0.0234 - val_tp: 9001.0000 - val_fp: 7800.0000 - val_tn: 3436006.0000 - val_fn: 25720.0000 - val_accuracy: 0.9904 - val_precision: 0.5357 - val_recall: 0.2592 - val_auc: 0.8883 - val_prc: 0.3337 - val_weighted_accuracy: 0.9904 - 647s/epoch - 370ms/step
+Epoch 33/60
+
+Epoch 33: val_prc did not improve from 0.34168
+1750/1750 - 708s - loss: 0.0120 - tp: 104814.0000 - fp: 46080.0000 - tn: 27742620.0000 - fn: 173199.0000 - accuracy: 0.9922 - precision: 0.6946 - recall: 0.3770 - auc: 0.9656 - prc: 0.5560 - weighted_accuracy: 0.9922 - val_loss: 0.0233 - val_tp: 8705.0000 - val_fp: 7434.0000 - val_tn: 3436372.0000 - val_fn: 26016.0000 - val_accuracy: 0.9904 - val_precision: 0.5394 - val_recall: 0.2507 - val_auc: 0.8981 - val_prc: 0.3363 - val_weighted_accuracy: 0.9904 - 708s/epoch - 405ms/step
+Epoch 34/60
+
+Epoch 34: val_prc did not improve from 0.34168
+1750/1750 - 708s - loss: 0.0119 - tp: 106076.0000 - fp: 47933.0000 - tn: 27736004.0000 - fn: 171652.0000 - accuracy: 0.9922 - precision: 0.6888 - recall: 0.3819 - auc: 0.9661 - prc: 0.5561 - weighted_accuracy: 0.9922 - val_loss: 0.0221 - val_tp: 9733.0000 - val_fp: 9792.0000 - val_tn: 3434014.0000 - val_fn: 24988.0000 - val_accuracy: 0.9900 - val_precision: 0.4985 - val_recall: 0.2803 - val_auc: 0.9150 - val_prc: 0.3388 - val_weighted_accuracy: 0.9900 - 708s/epoch - 404ms/step
+Epoch 35/60
+
+Epoch 35: val_prc improved from 0.34168 to 0.34756, saving model to /n/eddy_lab/users/rangerkuang/CC_project/uq_checkpoints/ckp_080922_1600/model_080922_1600.ckpt
+1750/1750 - 708s - loss: 0.0122 - tp: 102466.0000 - fp: 45923.0000 - tn: 27727500.0000 - fn: 175335.0000 - accuracy: 0.9921 - precision: 0.6905 - recall: 0.3688 - auc: 0.9650 - prc: 0.5488 - weighted_accuracy: 0.9921 - val_loss: 0.0228 - val_tp: 10371.0000 - val_fp: 10394.0000 - val_tn: 3433412.0000 - val_fn: 24350.0000 - val_accuracy: 0.9900 - val_precision: 0.4994 - val_recall: 0.2987 - val_auc: 0.9058 - val_prc: 0.3476 - val_weighted_accuracy: 0.9900 - 708s/epoch - 404ms/step
+Epoch 36/60
+
+Epoch 36: val_prc did not improve from 0.34756
+1750/1750 - 703s - loss: 0.0116 - tp: 108815.0000 - fp: 46247.0000 - tn: 27725378.0000 - fn: 168753.0000 - accuracy: 0.9923 - precision: 0.7018 - recall: 0.3920 - auc: 0.9666 - prc: 0.5727 - weighted_accuracy: 0.9923 - val_loss: 0.0236 - val_tp: 8998.0000 - val_fp: 7943.0000 - val_tn: 3435863.0000 - val_fn: 25723.0000 - val_accuracy: 0.9903 - val_precision: 0.5311 - val_recall: 0.2592 - val_auc: 0.8900 - val_prc: 0.3420 - val_weighted_accuracy: 0.9903 - 703s/epoch - 402ms/step
+Epoch 37/60
+
+Epoch 37: val_prc did not improve from 0.34756
+1750/1750 - 709s - loss: 0.0115 - tp: 109909.0000 - fp: 46840.0000 - tn: 27736918.0000 - fn: 168147.0000 - accuracy: 0.9923 - precision: 0.7012 - recall: 0.3953 - auc: 0.9669 - prc: 0.5742 - weighted_accuracy: 0.9923 - val_loss: 0.0242 - val_tp: 8983.0000 - val_fp: 8156.0000 - val_tn: 3435650.0000 - val_fn: 25738.0000 - val_accuracy: 0.9903 - val_precision: 0.5241 - val_recall: 0.2587 - val_auc: 0.8867 - val_prc: 0.3353 - val_weighted_accuracy: 0.9903 - 709s/epoch - 405ms/step
+Epoch 38/60
+
+Epoch 38: val_prc did not improve from 0.34756
+1750/1750 - 670s - loss: 0.0114 - tp: 111903.0000 - fp: 47778.0000 - tn: 27691942.0000 - fn: 165531.0000 - accuracy: 0.9924 - precision: 0.7008 - recall: 0.4033 - auc: 0.9679 - prc: 0.5796 - weighted_accuracy: 0.9924 - val_loss: 0.0240 - val_tp: 9544.0000 - val_fp: 8579.0000 - val_tn: 3435227.0000 - val_fn: 25177.0000 - val_accuracy: 0.9903 - val_precision: 0.5266 - val_recall: 0.2749 - val_auc: 0.8921 - val_prc: 0.3455 - val_weighted_accuracy: 0.9903 - 670s/epoch - 383ms/step
+Epoch 39/60
+
+Epoch 39: val_prc did not improve from 0.34756
+1750/1750 - 658s - loss: 0.0116 - tp: 109665.0000 - fp: 47719.0000 - tn: 27736526.0000 - fn: 168165.0000 - accuracy: 0.9923 - precision: 0.6968 - recall: 0.3947 - auc: 0.9665 - prc: 0.5706 - weighted_accuracy: 0.9923 - val_loss: 0.0236 - val_tp: 9827.0000 - val_fp: 9676.0000 - val_tn: 3434130.0000 - val_fn: 24894.0000 - val_accuracy: 0.9901 - val_precision: 0.5039 - val_recall: 0.2830 - val_auc: 0.8911 - val_prc: 0.3388 - val_weighted_accuracy: 0.9901 - 658s/epoch - 376ms/step
+Epoch 40/60
+
+Epoch 40: val_prc improved from 0.34756 to 0.34888, saving model to /n/eddy_lab/users/rangerkuang/CC_project/uq_checkpoints/ckp_080922_1600/model_080922_1600.ckpt
+1750/1750 - 681s - loss: 0.0112 - tp: 113050.0000 - fp: 47877.0000 - tn: 27728124.0000 - fn: 164249.0000 - accuracy: 0.9924 - precision: 0.7025 - recall: 0.4077 - auc: 0.9682 - prc: 0.5834 - weighted_accuracy: 0.9924 - val_loss: 0.0233 - val_tp: 10068.0000 - val_fp: 9259.0000 - val_tn: 3434547.0000 - val_fn: 24653.0000 - val_accuracy: 0.9903 - val_precision: 0.5209 - val_recall: 0.2900 - val_auc: 0.8960 - val_prc: 0.3489 - val_weighted_accuracy: 0.9903 - 681s/epoch - 389ms/step
+Epoch 41/60
+
+Epoch 41: val_prc did not improve from 0.34888
+1750/1750 - 687s - loss: 0.0113 - tp: 112445.0000 - fp: 48512.0000 - tn: 27696430.0000 - fn: 165333.0000 - accuracy: 0.9924 - precision: 0.6986 - recall: 0.4048 - auc: 0.9680 - prc: 0.5800 - weighted_accuracy: 0.9924 - val_loss: 0.0230 - val_tp: 11660.0000 - val_fp: 13217.0000 - val_tn: 3430589.0000 - val_fn: 23061.0000 - val_accuracy: 0.9896 - val_precision: 0.4687 - val_recall: 0.3358 - val_auc: 0.9095 - val_prc: 0.3450 - val_weighted_accuracy: 0.9896 - 687s/epoch - 393ms/step
+Epoch 42/60
+
+Epoch 42: val_prc did not improve from 0.34888
+1750/1750 - 685s - loss: 0.0113 - tp: 112189.0000 - fp: 48270.0000 - tn: 27725712.0000 - fn: 165578.0000 - accuracy: 0.9924 - precision: 0.6992 - recall: 0.4039 - auc: 0.9678 - prc: 0.5806 - weighted_accuracy: 0.9924 - val_loss: 0.0241 - val_tp: 10500.0000 - val_fp: 11221.0000 - val_tn: 3432585.0000 - val_fn: 24221.0000 - val_accuracy: 0.9898 - val_precision: 0.4834 - val_recall: 0.3024 - val_auc: 0.9004 - val_prc: 0.3371 - val_weighted_accuracy: 0.9898 - 685s/epoch - 391ms/step
+Epoch 43/60
+
+Epoch 43: val_prc did not improve from 0.34888
+1750/1750 - 686s - loss: 0.0112 - tp: 114630.0000 - fp: 49209.0000 - tn: 27738334.0000 - fn: 163051.0000 - accuracy: 0.9924 - precision: 0.6997 - recall: 0.4128 - auc: 0.9683 - prc: 0.5879 - weighted_accuracy: 0.9924 - val_loss: 0.0230 - val_tp: 9779.0000 - val_fp: 8961.0000 - val_tn: 3434845.0000 - val_fn: 24942.0000 - val_accuracy: 0.9903 - val_precision: 0.5218 - val_recall: 0.2816 - val_auc: 0.8996 - val_prc: 0.3468 - val_weighted_accuracy: 0.9903 - 686s/epoch - 392ms/step
+Epoch 44/60
+
+Epoch 44: val_prc did not improve from 0.34888
+1750/1750 - 683s - loss: 0.0108 - tp: 119464.0000 - fp: 49132.0000 - tn: 27726464.0000 - fn: 158414.0000 - accuracy: 0.9926 - precision: 0.7086 - recall: 0.4299 - auc: 0.9699 - prc: 0.6043 - weighted_accuracy: 0.9926 - val_loss: 0.0235 - val_tp: 9386.0000 - val_fp: 8585.0000 - val_tn: 3435221.0000 - val_fn: 25335.0000 - val_accuracy: 0.9902 - val_precision: 0.5223 - val_recall: 0.2703 - val_auc: 0.8921 - val_prc: 0.3454 - val_weighted_accuracy: 0.9902 - 683s/epoch - 390ms/step
+Epoch 45/60
+
+Epoch 45: val_prc did not improve from 0.34888
+1750/1750 - 708s - loss: 0.0110 - tp: 116944.0000 - fp: 47909.0000 - tn: 27731540.0000 - fn: 161094.0000 - accuracy: 0.9926 - precision: 0.7094 - recall: 0.4206 - auc: 0.9695 - prc: 0.5976 - weighted_accuracy: 0.9926 - val_loss: 0.0237 - val_tp: 8914.0000 - val_fp: 7933.0000 - val_tn: 3435873.0000 - val_fn: 25807.0000 - val_accuracy: 0.9903 - val_precision: 0.5291 - val_recall: 0.2567 - val_auc: 0.8877 - val_prc: 0.3375 - val_weighted_accuracy: 0.9903 - 708s/epoch - 404ms/step
+Epoch 46/60
+
+Epoch 46: val_prc did not improve from 0.34888
+1750/1750 - 709s - loss: 0.0109 - tp: 118346.0000 - fp: 48904.0000 - tn: 27738744.0000 - fn: 159559.0000 - accuracy: 0.9926 - precision: 0.7076 - recall: 0.4259 - auc: 0.9699 - prc: 0.6005 - weighted_accuracy: 0.9926 - val_loss: 0.0238 - val_tp: 10244.0000 - val_fp: 10810.0000 - val_tn: 3432996.0000 - val_fn: 24477.0000 - val_accuracy: 0.9899 - val_precision: 0.4866 - val_recall: 0.2950 - val_auc: 0.8937 - val_prc: 0.3329 - val_weighted_accuracy: 0.9899 - 709s/epoch - 405ms/step
+Epoch 47/60
+
+Epoch 47: val_prc did not improve from 0.34888
+1750/1750 - 703s - loss: 0.0110 - tp: 116136.0000 - fp: 47939.0000 - tn: 27723792.0000 - fn: 161370.0000 - accuracy: 0.9925 - precision: 0.7078 - recall: 0.4185 - auc: 0.9698 - prc: 0.5963 - weighted_accuracy: 0.9925 - val_loss: 0.0237 - val_tp: 9044.0000 - val_fp: 8421.0000 - val_tn: 3435385.0000 - val_fn: 25677.0000 - val_accuracy: 0.9902 - val_precision: 0.5178 - val_recall: 0.2605 - val_auc: 0.8941 - val_prc: 0.3334 - val_weighted_accuracy: 0.9902 - 703s/epoch - 402ms/step
+Epoch 48/60
+
+Epoch 48: val_prc did not improve from 0.34888
+1750/1750 - 699s - loss: 0.0111 - tp: 115413.0000 - fp: 47508.0000 - tn: 27723348.0000 - fn: 162745.0000 - accuracy: 0.9925 - precision: 0.7084 - recall: 0.4149 - auc: 0.9691 - prc: 0.5938 - weighted_accuracy: 0.9925 - val_loss: 0.0240 - val_tp: 9256.0000 - val_fp: 8424.0000 - val_tn: 3435382.0000 - val_fn: 25465.0000 - val_accuracy: 0.9903 - val_precision: 0.5235 - val_recall: 0.2666 - val_auc: 0.8916 - val_prc: 0.3383 - val_weighted_accuracy: 0.9903 - 699s/epoch - 399ms/step
+Epoch 49/60
+
+Epoch 49: val_prc did not improve from 0.34888
+1750/1750 - 708s - loss: 0.0107 - tp: 119414.0000 - fp: 48590.0000 - tn: 27737708.0000 - fn: 158523.0000 - accuracy: 0.9926 - precision: 0.7108 - recall: 0.4296 - auc: 0.9703 - prc: 0.6074 - weighted_accuracy: 0.9926 - val_loss: 0.0238 - val_tp: 9302.0000 - val_fp: 8604.0000 - val_tn: 3435202.0000 - val_fn: 25419.0000 - val_accuracy: 0.9902 - val_precision: 0.5195 - val_recall: 0.2679 - val_auc: 0.8961 - val_prc: 0.3465 - val_weighted_accuracy: 0.9902 - 708s/epoch - 405ms/step
+Epoch 50/60
+
+Epoch 50: val_prc did not improve from 0.34888
+1750/1750 - 707s - loss: 0.0105 - tp: 122542.0000 - fp: 48918.0000 - tn: 27725484.0000 - fn: 155294.0000 - accuracy: 0.9927 - precision: 0.7147 - recall: 0.4411 - auc: 0.9709 - prc: 0.6160 - weighted_accuracy: 0.9927 - val_loss: 0.0252 - val_tp: 7720.0000 - val_fp: 6201.0000 - val_tn: 3437605.0000 - val_fn: 27001.0000 - val_accuracy: 0.9905 - val_precision: 0.5546 - val_recall: 0.2223 - val_auc: 0.8701 - val_prc: 0.3359 - val_weighted_accuracy: 0.9905 - 707s/epoch - 404ms/step
+Epoch 50: early stopping
+=====TEST RESULTS======
+221/221 - 76s - loss: 0.0227 - tp: 9681.0000 - fp: 10515.0000 - tn: 3485234.0000 - fn: 23847.0000 - accuracy: 0.9903 - precision: 0.4794 - recall: 0.2887 - auc: 0.8946 - prc: 0.3140 - weighted_accuracy: 0.9903 - 76s/epoch - 343ms/step
